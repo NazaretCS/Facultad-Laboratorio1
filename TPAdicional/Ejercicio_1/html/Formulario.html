@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="../ccs/estilo.css">
+    
+</head>
+<body>
+   
+    <nav  class="nav1">
+        <ul>
+            <li><a href="#contenido">Saltar a contenido </a></li>
+            <li> <a href="#navegacion">Saltar a navegacion</a> </li>
+        </ul>
+        
+    </nav>
+    
+    <header>
+        
+        <figure>
+            <img src="../img/mcu.png" alt="Imagen con el logo de Marvel">
+        </figure>
+        <h1>MARVEL CINEMATIC UNIVERSE</h1>
+        
+    </header>
+    
+    <section class="secciongeneral">  
+    
+        <section id="contenedor-menu">
+            <figure>
+                <a href="#contenedor-menu"><img src="../img/burger_menu.png" alt="imagen de tres lineas horizontales paralelas" id="abrir"></a>
+                <a href="#"><img src="../img/cerrar_menu.png" alt="imagen de una X grande color negro" id="cerrar"></a>
+            </figure>
+            <nav id="contenedor-enlaces">   
+                <ul id="navegacion">
+                    
+                    <li>  <a href="../index.html">Inicio</a> </li>
+                    <li> <a href="Tabla.html">Peliculas</a>  </li>
+                    <li> <a href="#">Formulario</a>  </li>
+                    
+                    
+                    
+                </ul>
+            </nav>
+        </section>
+        
+        <main id="contenido">
+            <section>
+                <h2 class="h2form">Suscripción</h2>
+                <p>Complete los datos del formulario de abajo para recibir las últimas novedades del Universo Cinematográfico de Marvel.</p>
+                <form action="labo2.php" method="POST">
+                    <fieldset>
+                        <legend>Por favor, llena los siguientes campos</legend>
+
+                    
+
+                        <label for="nom">Nombre:</label>
+                            <input type="text" name="nombre" id="nom" placeholder="Victoria" required>
+                        
+                        <label for="ape">Apellido:</label>
+                            <input type="text" name="apellido" id="ape" placeholder="Belgrano" required>
+
+                        <label for="mail">Ingrese su correo:</label>
+                            <input type="email" name="correo" id="mail" placeholder="matias27@gmail.com" >
+                        
+                        <label for="fecnac">Fecha de Nacimiento</label>
+                            <input type="date" id="fecnac" value="2020-01-01"  >
+                            
+                    
+                    
+                    
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Enviar" class="botonesformu">
+                        <input type="reset" value="Limpiar" class="botonesformu">
+                    </fieldset>
+                </form>
+                
+                
+            </section>
+            
+            
+        </main>
+    </section>
+    
+    
+    <footer>
+        
+        <p>
+            Marvel Cinematic Universe
+        </p>
+      
+    </footer>
+</body>
+
+</html>

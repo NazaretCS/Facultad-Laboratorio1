@@ -1,0 +1,598 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none
+}
+#contenedor-menu nav ul{
+    background-color: rgb(255, 255, 255);
+    
+    
+    
+}
+#contenedor-menu  li{
+    background-color: rgb(255, 0, 0);  
+}
+
+
+
+figure{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h1{
+   background-color: rgb(0, 0, 0); 
+   color: rgb(243, 228, 180)
+    
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: white;
+}
+.nav1{
+  background-color: rgb(255, 0, 0);  
+}
+nav li a{
+    color: white;
+}
+
+main section{
+    background-color: rgb(255, 242, 199);
+}
+.seccion1{
+   
+    color: white;
+    background-color: black;
+    
+    
+}
+
+article{
+    background-color: rgb(255, 242, 199);
+    border-radius: 0.3em;
+    
+}
+.color{
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+form {
+    background-color: rgb(255, 0, 0);
+    
+    
+}
+fieldset {
+    background-color: rgb(255, 0, 0);
+}
+table{
+    background-color: red;
+}
+caption{
+    background-color: red;
+}
+td, th{
+    border:dotted rgb(24, 22, 22) 0.2em
+}
+table{
+    border: solid red 0.2em;
+}
+footer p{
+    color: white;
+}
+/*----------------------------------Sitio de pantallas mayores que 320--------------------------*/
+@media all and (min-width:320px) {
+    header figure {
+        width: 20em;
+        margin:0 auto ;
+        vertical-align: middle;
+        height: 13em;
+    }
+    header img {
+        width: 100%;
+        height: 100%;
+    }
+    header h1{
+        text-align: center;
+        font-size: 4vw
+    }
+    
+    .logomarvel {
+        float: left;
+        width: 19.6em;
+        padding: 0.6em;
+    }
+    
+    .logomarvel img {
+        width: 100%;
+    }
+    section p{
+        padding: 0.9em;
+    }
+
+    .seccion1{
+        column-count: 1 ;
+        text-align: justify;
+        column-gap: 3%;
+        padding: 0.3em;
+        text-indent: 0.2em;
+        margin: 4vh;
+        
+        
+        
+        
+    }
+
+
+    
+
+    
+    
+    #contenedor-menu img{
+        
+        width: 4.4em;
+        
+    }
+    #contenedor-menu #cerrar{
+        
+        display: none;
+    }
+    #contenedor-menu ul {
+        height: 0;
+        overflow: hidden;
+        transition: 1.5s;
+    
+    }
+
+    #contenedor-menu:target #cerrar{
+        
+        display:block;
+        width: 3.3em;
+        padding: 0.6em;
+        
+        
+    } 
+    
+    #contenedor-menu:target #abrir{
+        
+        display: none;
+    }
+    
+    #contenedor-menu:target ul{
+        transition: 0.8s;
+        height: 8em;
+        
+    }
+
+    nav li {
+        padding-bottom: 0.7em;
+        margin-top: 0.5em;
+        width: 100vw;
+        vertical-align: middle;
+        
+    }
+    nav a {
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+    }
+
+    .nav1  li  {
+        display: inline-block;
+        padding: 0em;
+        
+        font-size: 0.6em;
+    }
+    
+    footer {
+        height: 6vh;
+       
+    }
+    footer p{
+        
+        vertical-align: middle;
+    
+    }
+    
+    
+     
+    
+    
+    
+    
+    
+        
+
+    /*------------------tabla responsive para 320px----------------*/
+    .figtabla{
+        width: 15em;
+        height: 30vh;
+        margin:0 auto;
+        vertical-align: middle;
+    }
+    .figtabla img{
+        width: 100%;
+        height: 100%;
+    }
+    table  {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4em;
+        border-collapse: collapse;
+    }
+    table caption {
+        padding-bottom: 1em;
+    }
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7em;
+        box-shadow: 0em 0.1em 0.1em gray;
+        
+        
+    }
+    table td{
+        padding: 0.3em 0.3em 0.3em 0em;
+        border-right: 0.5em;
+        
+    }
+ 
+    .titulostabla{
+        display: none;
+    }   
+    td:nth-of-type(1)::before{
+        content: "Portada:";
+        padding-left: 0.1em;
+        padding-top: 0.3em;
+        padding-right: 0.47em;
+        padding-bottom: 0.4em;
+    }
+
+    td:nth-of-type(2)::before {
+        content: "Titulo:";
+        padding-left: 0.1em;
+        padding-top: 0.25em;
+        padding-right: 0.9em;
+        padding-bottom: 0.37em;
+        
+    }
+
+    td:nth-of-type(3)::before {
+        content: "Estreno:";
+        padding-left: 0.1em;
+        padding-top: 0.31em;
+        padding-right: 0.3em;
+        padding-bottom: 0.42em;
+        
+     }
+     td:nth-of-type(4)::before {
+        content: "Fase:";
+        
+        
+        padding-left: 0.1em;
+        padding-top: 0.31em;
+        padding-right: 1.5em;
+        padding-bottom: 0.42em;
+        
+     }
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        background-color: rgb(202, 202, 202);
+        color: black;
+
+        margin-right: 0.3em;
+        
+        
+        
+        
+        
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        background-color: rgb(102, 51, 153);
+        color: red;
+        margin-right: 0.1em;
+        
+        
+    }
+/*----------------------formulario responsibe para 320px------------------*/
+    form {
+        width: 95%;
+        margin: 0 auto;
+        
+        
+        
+    }
+    fieldset {
+        margin-bottom:  1em;
+        
+    }
+    form legend{
+        font-size: 2em;
+        padding-top: 0.6em;
+    }
+    
+    form input[type=text], form input[type=email], form input[type=date], form label{
+        display: block;
+        font-size: 1.5em;
+        padding: 0.6em;
+        width: 95%;
+        margin: 0auto;
+    }
+
+    form .botonesformu {
+        display: block;
+        width: 97%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+    
+
+}
+/*------------------------------------Fin de Codigo perteneciente a 320px-------------------------------*/
+/*-----------------------------Inicio del Codigo para pantallas mayores a 768px-------------------------*/
+@media all and (min-width:768px){
+    /*----------------------------Columnas responsibe para 768px en adelante--------------------------*/
+    
+   .seccion1 {
+           
+        column-count: 2;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 0.7em;
+        text-indent: 0.2em;
+        
+        
+        
+        
+    
+    }
+
+    
+
+    .seccion1 h2{
+        text-align: center;
+    }
+
+    
+    
+    
+}
+/*------------------------------------Fin de Codigo perteneciente a 768px -------------------------------*/
+
+/*-----------------------Inicio del codigo perteneciente a 1024px en adelante ---------------------------*/
+@media all and (min-width:1024px){
+
+    header h1{
+        font-size: 1.4em;
+        
+        
+    }
+
+    header figure{
+        padding-left: 20em;
+    }
+
+    header h1, header figure {
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+    .logomarvel {
+        float:none; 
+    }
+
+    
+    .s2 p{
+        width: 56%;
+    }
+
+    .s2 p, .s2 .logomarvel {
+        display:inline-block;
+        vertical-align: middle;
+        background-color: 
+    }
+
+
+    .secciongeneral{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    #contenedor-menu figure{
+        
+        display: none;
+        
+    }
+    #contenedor-menu #cerrar{
+        
+        display:none;
+    }
+
+    #contenedor-menu #contenedor-enlaces  ul {
+        
+        height: 7em;
+        
+    }
+
+    
+    #contenedor-enlaces ul{
+        display: flex;
+        flex-direction:column;
+        width: 18vw;
+        
+    }
+    #contenedor-enlaces li{
+        flex-grow: 1;
+        
+    }
+    
+    #contenedor-menu ul {
+        
+        transition: 0s;
+    
+    }
+
+    .titulo2{
+        padding-top: 1em;
+        text-align: center;
+        
+    }
+    #contenedor-menu #contenedor-enlaces :hover, #contenedor-menu #contenedor-enlaces a :focus{
+        background-color: rgba(2, 2, 2, 0.24);
+        transition: 1s;
+    }
+    
+    
+    #contenedor-menu:target ul{
+        transition: 0s;   
+    }
+    
+
+    nav li {
+        padding-bottom: 0.4em;
+        margin-top: 0.2em;
+        width: 18vw;
+        
+        
+    }
+    nav a {
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+    }
+
+    
+
+
+
+    
+
+    /*----------------------------Columnas responsibe para 1024px en adelante--------------------------*/
+    .seccion1 {
+        
+        column-count:3;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 0.7em;
+        text-indent: 0.2em;
+        
+        
+    
+    }
+
+    .seccion1 h2{
+        text-align: center;
+        padding-bottom: 0.7em;
+    }
+    /*----------------------------Tablas responsibe para 1024px en adelante--------------------------*/
+    
+    table{
+        text-align: center;
+     }   
+     caption h2{
+        padding-top: 1em;
+     }
+ 
+    .titulostabla, tr{
+        display: table-row;   
+    }   
+    
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        display: none;   
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        display: none;
+          
+    }
+    
+   
+
+   
+
+         
+    
+   
+
+
+    /*----------------------formulario responsibe para 1024px---------------------*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+        
+        
+        
+    }
+    form legend{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    
+    form input[type=text], form input[type=email], form input[type=date], form label {
+        display:inline-block;
+        font-size: 1.5em;
+        padding: 0.2em;
+        width: 59%;
+        margin: 0.2em;
+    }
+    form label{
+        width: 26%;
+        display: inline-block;
+        padding-left: 1em;
+        text-align: center;
+        
+    }
+    .labeltextarea textarea{
+        vertical-align: middle;
+    }
+    
+    
+    form .botonesformu {
+        display:inline-block;
+        width: 48%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+    .h2form{
+        padding: 1em;
+        font-size: 2em;
+    }
+
+
+}
