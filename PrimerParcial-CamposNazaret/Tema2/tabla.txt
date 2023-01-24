@@ -1,0 +1,6 @@
+Título de la tabla: 3 Best Sellers
+
+Nombre, Autor, Precio
+Sira, María Dueñas, $ 1890
+(Mal) Educadas, María Florencia Freijo, $ 1200
+El Poder del ahora, Eckhart Tolle, $ 1459
