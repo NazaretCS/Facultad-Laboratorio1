@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--aqui coloco todo aquello que valla en el head como el title, los meta y el link del ccs-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>Cantante Rusher king</title>
+    <link rel="stylesheet" href="../ccs/estilo.css">
+    
+</head>
+<!--inicio lo que seria el cuerpo sentral de mi pagina-->
+<body>
+    <!--en este nav coloco los enlaces para poder saltar al contenido o a la navegación-->
+    <nav>
+        <ul>
+            <li><a href="#contenido">Saltar a Contenido </a></li>
+            <li> <a href="#navegacion">Saltar a Navegación</a> </li>
+        </ul>
+
+    </nav>
+    <!--en el header coloco una imagen y el titulo principal de mi sitio-->
+    <header>
+        <figure>
+            <img src="../img/foto3.jpg" alt="Fotografia de un hombre con un microfo en mano">
+        </figure>
+        <h1>Rusher King</h1>
+    </header>
+    <!--aqui creo mi menu del sitio para con el navegar entre las paguinas-->
+    <nav id="navegacion">   
+        <ul>
+            
+            <li><a href="../index.html">Inicio</a> </li>
+            <li> <a href="presentación.html">Presentacion</a>  </li>
+            
+        </ul>
+    </nav>
+   
+    
+    <main id="contenido" class="main1" >
+        <section >
+                <!--aqui inicio la tabla de la paguina presentaciones-->
+                <table>
+                    <!--en el caption de la tabla va alguna frase referente a la misma a modo de titulo-->
+                    <caption><h2>Algunnos Temas del Cantante Rusher King</h2></caption>
+                    <!--mediante el thead indico que estos seran los titulos de las columnas-->
+                    <thead>
+                        <tr class="impar"><!--tr idica donde comienza la fila, tambien aqui, al igual que otras partes de la tabla, coloco la clase impar ya que quiero que toda la fila posea los atrivutos de la misma-->
+                            <th scope="col">Tema</th> <!--scope sirve para identificar los titulos, el valor col indica que sera titulo de columna-->
+                            <th scope="col">Albun</th>
+                            <th scope="col">Año</th>
+                            <th scope="col">Artistas Colaboradores</th>
+                        </tr><!--/tr indica donde termina la fila-->
+                    </thead>
+                    <tbody>
+                        <tr class="par"><!--aqui coloco la clase par ya que quiero que toda la linea tenga los atributos de dicha clase-->
+                            <th scope="row">Además de Mí - Remix</th><!--en este caso el valor row de la propiedad scope indica que es un encabezado de fila-->
+                            <td>Además De Mí</td>
+                            <td>2021</td>
+                            <td>Tiago PZK, Khea, Lit Killah, Duki, Maria Becerra</td>
+                        </tr>
+                        <tr class="impar">
+                            <th scope="row" >Llegue Tarde</th>
+                            <td>Sencillo</td>
+                            <td>2021</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row">Además de Mí</th>
+                            <td>Además de Mí</td>
+                            <td>2021</td>
+                            <td>Tiago PZK</td>
+                        </tr>
+                        <tr class="impar">
+                            <th scope="row">Vos</th>
+                            <td>Lado B</td>
+                            <td>2020</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row">Nights Alone</th>
+                            <td>Lado B</td>
+                            <td>2020</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="impar">
+                            <th scope="row">Otra Noche Más</th>
+                            <td>Lado B</td>
+                            <td>2020</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row">Y si te Tocas</th>
+                            <td>Sencillo</td>
+                            <td>2020</td>
+                            <td>Oscu</td>
+                        </tr>
+                        <tr class="impar"> 
+                            <th scope="row">Por Como Te Quiero</th>
+                            <td>Sencillo</td>
+                            <td>2019</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row">¿Como Te Explico?</th>
+                            <td>Sencillo</td>
+                            <td>2019</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="impar">
+                            <th scope="row">Pa Siempre</th>
+                            <td>Sencillo</td>
+                            <td>2019</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row">No Les Sale</th>
+                            <td>Sencillo</td>
+                            <td>2019</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="impar">
+                            <th scope="row">Somebody Like You</th>
+                            <td>Sencillo</td>
+                            <td>2018</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="par">
+                            <th scope="row" >Tus Ojos</th>
+                            <td>Sencillo</td>
+                            <td>2018</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            
+            
+        </section>
+    </main>
+    <!--en el aside colco portadas de algunas canciones de mi cantante con un figcaption qu esta linkeado hacia los videos de las mismas-->
+    <aside>
+        <p> <h3>Escucha alguno de estos hits de Rusher King</h3>
+            <figure>
+                <img src="../img/ademas de mi remix.jpg" alt="Imagen de 6 jovenes posando seriamente">
+                <figcaption>
+                    <a href="https://youtu.be/dQlihE2-HLM"> Ademas de Mi Remix</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../img/ademas de mii.jpg" alt="fotografia de dos joivenes posando seriamente, con un fondo muy iluminado por luces led de colores">
+                <figcaption> <a href="https://youtu.be/_43VJRhcPOc">Además de Mí</a></figcaption>
+            </figure>
+            <figure>
+                
+                <img src="../img/confiesalo.jpeg" alt="imagen de un varon y una mujer a punto de darse un beso">
+                <figcaption> <a href="https://www.youtube.com/watch?v=B-zPAmzDyGI">Confiezalo</a></figcaption>
+            </figure>
+            <figure>
+                
+                <img src="../img/ya no me extrañas.jpg" alt="imagen de fonde rojo y sobre el se lee Ya no me extrañas">
+                <figcaption> <a href="https://www.youtube.com/watch?v=3rPuHzn3w78">Ya no me extrañas</a></figcaption>
+            </figure>
+            
+        </p>
+    </aside>
+    <!--en el footer coloco una leyenda de copyright y mi correo linkeado-->
+    <footer>
+        <p> © copyright Campos</p> 
+        <p>Contacto <a href="mailto:nazaretcampos@27gmial.com">nazaretcampos@27gmial.com</a></p>
+      
+    </footer>
+</body>
+
+</html>

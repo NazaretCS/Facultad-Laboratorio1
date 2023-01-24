@@ -1,0 +1,206 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+/*--------en toda esta parte trabajo el header-------*/
+header{
+    background-color: rgb(85, 85, 85);
+}
+
+header figure{
+    width: 12em;
+    height: 15vh;
+    padding-left: 2.5em;
+    
+}
+header img{
+    width: 12em;
+    height: 15vh;
+    
+}
+
+header h1, header figure{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*-----------------------------------------------*/
+
+/*---------En est parte lo que ago es trabajar el nav------*/
+nav{
+    background-color: rgba(255, 227, 66, 0.596);
+    
+    
+
+}
+nav ul{
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+
+}
+nav li{
+    margin: 0.3em 0.5em;
+
+}
+nav li:hover, a:focus{
+    background-color: rgb(255, 255, 255);
+}
+/*-------------------------------------------------------*/
+
+/*---------Aqui epiezo a modificar algunas cosas de mi main-------*/
+ main{
+    background-color:#898A8A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+/*-----------------------------------------------------------------*/
+ 
+/*---------------------Modifico mi seccion-------------------------*/
+section{
+   
+    display: flex;
+    flex-direction: row;
+    background-color: #000000
+      
+ }
+ /*---------------------------------------------------------------*/
+
+
+ /*------Aqui modifico mis article, incluyendo los article detonados por-------*/
+ article{
+     
+     width: 43em;
+     padding: 2em;
+     text-align: justify;
+     margin: 2em;
+     border: 0.9em solid rgba(219, 195, 58, 0.795);
+
+    
+ }
+.articulo1 figure{
+    width: 20em;
+    height: 45vh;
+    float:left;
+    padding: 1em;
+    
+}
+.articulo1 img{
+    width: 20em;
+    height: 45vh;
+    
+}
+
+
+.articulo1 {
+   background-color: #aaaaaa;  
+   border-top-left-radius: 3em;
+   border-bottom-right-radius: 3em;
+   
+ }
+ .articulo2{
+     background-color: #8a8a8a;
+     border-top-right-radius: 3em;
+     border-bottom-left-radius: 3em;
+
+ }
+ .articulo2 figure{
+     width: 20em;
+     height: 50vh;
+     padding: 2em;
+     padding-left: 7em;
+ }
+ .articulo2 img{
+     width: 100%;
+     height: 100%;
+ }
+ /*----------------------------------------------------------------*/
+
+ /*--------En toda esta parte voy dandole distintos atributos a la tabla--------*/
+ table {
+     border: 0.2em;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0 auto;   
+ }
+
+table caption{
+    font-size: 1.2em;
+}
+ th, td{
+     border: 0.2em solid   rgb(253, 230, 103);
+     padding: 1em;
+     text-align: center;
+ }
+ .impar{
+     background-color: rgba(255, 239, 148, 0.849);
+ }
+ .par {
+     background-color: rgb(182, 182, 182);
+ }
+ /*-------------------------------------------------------------------------------*/
+ 
+ /*-------------------empiezo a modificar la parte del aside----------------*/
+ aside{
+    background-color: rgb(110, 110, 110);
+    float: right;
+    width: 20.2vw;
+    height: 137vh;
+
+    
+       
+}
+
+aside figure{
+    width: 12vw;
+    right: 10vh;
+    margin:0 auto;
+    padding-top: 1em;
+}
+
+aside img{
+    width: 100%;
+    right: 100%;
+    
+    
+    
+}
+figcaption{
+    text-align: center;
+}
+aside p{
+    margin: 2em;
+}
+/*------------------------------------------*/
+/*estos main1 hacen referencia al main de la paguina de presentaciones*/
+.main1 {
+    width: 78.4vw;
+    background-color: mediumaquamarine;
+    
+    
+    
+}
+.main1 section{
+    padding: 2em;
+    
+    background-color:rgb(71, 71, 71);
+    height: 127vh;
+    
+}
+
+.main1, aside{
+    display: inline-block;
+    
+}
+/*----------------modifico el footer de mi sitio----------------*/
+footer{
+     
+     background-color: rgb(34, 34, 34);
+     text-align: center;
+ }
+
+
+
+ 

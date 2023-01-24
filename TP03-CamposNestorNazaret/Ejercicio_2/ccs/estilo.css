@@ -1,0 +1,46 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+
+}
+main {
+    background-color: rgb(141, 192, 221);
+    height: 100vh;
+    vertical-align: middle;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding-top: 3em;
+}
+header{
+    padding-top: 1.5em;
+    background-color: rgb(0, 88, 139);
+}
+h1{
+   padding-left: 3em;
+   fon   
+    
+}
+table{
+    border-collapse: collapse;
+    margin:0 auto ;
+    background-color: rgb(154, 207, 243);
+    padding-top: 1em;
+     
+   
+}
+
+
+th, td{
+   border: 0.5em rgb(49, 103, 165) solid;
+   text-align: center;
+   padding: 1em;
+
+}
+tr :hover{
+    background-color: rgb(112, 112, 112);
+}
+
+ 
