@@ -1,0 +1,182 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+h2  {
+    padding-left: 2em;
+    /*a mi etiqueta h2 le doy un relleno izquiero de 2em*/
+}
+
+nav { 
+    background-color: #173f52; /*defino el color de fondo de mi barra de navegación*/
+    width: 100%;/*aqui le doy un ancho del 100%*/
+    height: 6vh;/*y un alto de 6vh*/
+    font-size: 1.1em; /*cambio su tamaño de letra*/ 
+}
+
+nav li:hover, nav li:focus{/*aqui a los elementos de la lista le doy la propiedad hover y focus para que cuando pase el puntero sobre ellos suceda lo siguiente*/
+    background-color: brown;   /*en este caso ago que al pasar el puntero sobre los elementos de la lista el color de fondo cambie al denotado*/
+}
+
+nav a{
+    text-decoration: none;/*aqui pongo que la decoracion del texto sea ninguna*/
+    padding: 0.5em;/*aqui ago que la barra de navegacion tenga un relleno de 0.5em*/
+}
+
+nav li{
+    display: inline-block;/*aqui a la lista le doy una alineacion tal que los elementos de la lista se coloquen uno a l par del otro*/
+}
+
+nav ul{
+    padding-top: 0.5em;
+    padding-left: 2em;  
+    /*aqui a los elementos de la lista le doy un padding superior e izquierdo*/
+}
+
+header{
+    background-color: #173f52d5;
+    width: 100%;
+    height: 17vh;  
+    /*aquie ago que la cavesera tenga el color deseado, y tambien modifico el ancho y el alto de la misma*/
+}
+
+header h1, header figure{
+    display: inline;
+    vertical-align: middle ;
+    margin:0 auto ;
+    /*aqui ago que el h1 y el figure del header esten en la misma linea y el h1 se alinee al medio de la imagen del figure*/
+}
+
+header img{
+    width: 16.9em;
+    height: 17vh;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    /*aqui al img del header le doy un ancho, un alto y le modifico el padding izquierdo y derecho*/
+}
+
+   
+aside{
+    
+    background-color: #173f52d7;
+    width: 37em;
+    text-align: justify;
+    vertical-align: top;     
+    /*aqui a mi aside le modifico el ancho, el color de fondo, alineo el texto que en el se encuentra y le doy una alineacion hacia arriva*/ 
+}
+
+aside img{
+    height: 44vh;
+    padding-right:  1.5em;
+    padding-left: 1.5em;  
+    padding-top: 3.4em;
+    /*aqui a la imagen del aside le modifico la altura, y los padding derecho, izquierdo y y superior*/
+}
+
+aside figcaption{
+    padding-bottom:1.5em ;
+    
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:wavy;
+    font-size: 0.7em;
+    /*aqui al figcaption del aside le doy un padding inferior, centro y curvo un poco su texto, yuna pequeña inclinacion, ademas le modifico el tamaño de su texto */
+}
+
+p{
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 0.9em;
+    /*aqui a los parrafos les doy un padding derecho, izquierdo e inferior*/
+}
+
+main{
+    
+    float: right;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;    
+    /*aqui al main lo ago flotar hacia la derecha, justifico su texto y tambien modifico su tipo de letra*/
+}
+main img{
+    width: 18em;
+    right: 10vh;
+    float:inherit;
+    /*aqui a las imagenes del main le doy un ancho y un alto, ademas de cambiarle la propiedad floar*/
+}
+
+
+ section{
+    display: flex;
+    flex-direction: row;
+    /*aqui ago que que el seccion sea mi "caja flexible" dandole flex direction row para hacer que los elementos se coloquen uno a la par de los otros*/
+    
+    
+    
+}
+
+
+article{
+    padding-top: 2em;
+    padding-left: 1.2em; 
+    /*modificos las propiedades de los articles dandole un padding top y left deseado*/
+}
+
+section main article img{
+    padding: 2em;
+    float: right;
+    width: 25em;
+    height: 44vh;
+    /*aqio modifico las imagenes que estan dentro de los articulos que estan dentro de main, y a su vez el main esta dentro del secciondandole las pripiedades deseadas*/
+    /*le doy un padding en todas las direcciones de 2em, un flotado hacia la derecha, y modifico el ancho y el altoi de las mismas*/
+}
+
+main article section{
+    background-color: #0d799d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+/*aqui modifico las propiedades del seccion que esta dentro del article, que a su vez esta dentro dentro del main*/
+/*le doy el color de fondo deseado, lo ago flexible, y mediante la propiedad wrap ago que cada elemento este a la misma distancia de los demas*/
+}
+
+main article section figure {
+    width: 22%;
+    height: 40%;
+    margin: 1em;
+    float: left;
+    text-align: center;
+    /*aqui trabajo al figure que esta en seccion del article, del main*/
+    /*le modifico el ancho, el alto, los margenes, alineo su texto y ademas le doy la propiedad de flotado*/
+}
+
+
+article figcaption{
+    float: right;
+    /*aqui modifico el texto que le puse a las figcaption de los article*/
+
+}
+
+
+
+
+footer{
+    background-color: #173f52;
+    width: 100%;
+    text-align: center;
+    /*aqui al footer le modifico el color de fonto, le establesco unancoho y centro su texto*/    
+
+}
+
+ body{
+     background-color: #0d799d;
+    /*aqui al body le doy un color de fondo apropiado*/
+
+ }
+
+    
+
