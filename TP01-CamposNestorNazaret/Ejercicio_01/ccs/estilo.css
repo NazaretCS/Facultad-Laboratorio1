@@ -1,0 +1,141 @@
+/*Comente el código de este archivo*/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}/*en estos tres atributos se esta diciendo que tanto los bordes, los margenes y que el relleno de los elemtos este en 0*/
+
+header {
+    padding: 1em;/*aqui modificamos el relleno del encabezado de mi pagina dandole el valor de 1em*/
+    background-color: bisque;/*modificamos el color de fondo del encabezado */
+
+}
+
+header h1 {
+    text-align: center;/*centramos el texto que contiene la etiqueta h1 del encabezado*/
+    font-size: 1.36em
+}/*centramos el texto que contiene la etiqueta h1 del encabezado y le damos un tamaño de letra de 1.36em*/
+
+nav {
+    padding: 0.5em;
+    background-color:brown;
+    font-size: 1.06em
+}/*a la barra de navegacion le damos un padding de 0.5em, un color de fondo, y un tamaño de letra de 1.06em*/
+
+nav li {
+    display: inline-block;
+    
+}/*con esta sintaxis hacemos que los elementos de la lista aparescan uno al lado del otro*/
+
+ 
+
+
+nav ul {
+    list-style: none;
+}/*aqui aclaramos que el estado de lista sea ninguno*/
+
+nav a {
+
+}/*no hice uso de esta parte*/
+
+nav a:hover, nav a:focus {
+    
+
+}/*no hice uso de esta parte*/
+
+ figure {
+    float: left;
+    
+    margin-right: 1.3%;
+    
+
+}/*aqui estmos pidiendo que la imagen se posicione a la hizquierda del texto, y dandole a la misma un margen derecho de 1.3%*/
+figure, img{
+    
+    width: 8em;
+    
+    
+    
+}/*aqui le damos un ancho a la imagen de 8em*/
+
+}
+    
+    
+
+
+figcaption {
+    font-size: 0.7em;
+    font-style: oblique;
+    
+}/*aqui hacemos que el texto que va en la etiqueta figcaption tenga un tamaño de 0.7em, y le damos el estilo de fuente "oblique"*/
+
+footer {
+    text-align: center;
+    background-color: brown;
+    padding: 0.2%;
+    width: 100%;
+}/*centramos en texto del pie de página, le damos un color de fondo al mismo, como asi también un paddign de 0.2% y un ancho del 100%*/
+
+
+footer img {
+    vertical-align: bottom;
+    width: 5em;
+    background-color: brown;
+    
+    
+}/*aqui trabajamos la imagen del footer: la alineamos a la pare inferior, le damos un ancho de 5em y un color de fondo*/
+
+main, aside {
+    display: inline-block;
+  
+}/*hacemos que el aside de las paginas tengan un bloque en linea*/
+main, article {
+    padding-top: 2.5em;
+    padding-bottom: 2,4em;
+    font-size: 1.2em;
+
+}/*hacemos que los articulos de las paginas tengan un padding superior de 2.5em, y una letra de 1.2em de tamaño*/
+
+
+
+
+main {
+    float:unset;
+    font-size: 1,08em;
+    width: 71%;
+    padding-top: 2.5em;
+    padding-right: 2%;
+    padding-left: 2%;
+    
+   /*aqui trabajamos el main: dandole un tamaño de fuente de 1.08em, un ancho del 71%, un padding superior de 2.5em, un padding derecho de 2%, y un padding izquierdo de 2%*/
+    
+}
+
+
+aside {
+    
+    vertical-align: top;
+    width: 24.5%;
+    text-align: center;
+    padding-top: 5em;
+    font-size: 1.3em;
+    
+    /*aqui trabajamos el aside: dandole una alineacion vertical superior, un ancho de 24.5em, un padding superior de de 5em, y un tamaño de letra de 1.3em*/
+    
+}
+
+aside h2 {
+    margin-bottom: 1.5em;
+}/*aqui hacemos que el h2 del aside tenga un margen inferior de 1.5em*/
+
+
+aside img {
+    width: 14em;
+
+    
+}/*aqui hacemos que la imagen del aside tenga un ancho de 14em*/
+
+p{
+    margin-top: 0.6em; /*en esta sentecia hago que todos los parrafos tengan un borde inferior de 0.6em*/
+}

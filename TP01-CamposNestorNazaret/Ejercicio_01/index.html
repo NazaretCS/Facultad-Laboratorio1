@@ -1,0 +1,52 @@
+<!DOCTYPE html><!--indica al navegador que version de HTML estamos usando-->
+<html lang="es"><!--indico el comiezo del archivo html, y mediante la propiedad "es" inico el lenguaje, en este caso, español-->
+<head><!--habro la etiqueta head (cabesera)-->
+    <meta charset="UTF-8"><!--meta indica que lo que sigue es informacion adicional, la propiedad charset="UTF-8" indica que uso un conjunto de caracteresmuy englobador, para no dejar fuera ningun simbolo-->
+    <title>Partes de una Compútadora</title><!--coloco el titulo de la pagina-->
+    <link rel="stylesheet" href="ccs/estilo.css"><!--linkeo el archivo css para poder darle los atributos visuales deseados a toda la pagina-->
+</head><!--cierro la etiqueta de cabesera-->
+<body><!--habro la etiqueta body, que representa al cuerpo de mi HTML-->
+    <header><h1>Laboratorio 1- TP01</h1></header><!--aqui coloco el titulo o encabesado de mi pagina, las etiquetas h1 denotan que es el titulo mas importante de mi codigo-->
+    <nav><!--con esta equiqueta creo una pequeña barra de navegacion-->
+        <ul><!--aqui creo una lista en la barra de navegacion para que quede mas presentable-->
+            <li><a href="inde.html">Inicio</a></li><!--en e este (que es mi primer elemento de la lista) linkeo mi archivo html principal, si bienno lo veo muy nesesario porque ya estoy aqui igual lo quise poner-->
+            <li><a href="html/Hardware.html">Hardware</a>  </li><!--en este, mi segundo elemento de la lista linkeo el harchivo harware.html para poder abrirlo-->
+            <li><a href="html/software.html">Software</a></li><!--en este, mi tercer elemtno de la lista d-->
+        </ul><!--mediante esta etiqueta finalizo la lista-->
+    </nav> <!--cierro mi barra de navegacion-->
+    <main><!--aqui le doy comienzo a mi main, osea a lo que seria el contenido principal de mi pagina-->
+        <section><!--habro una seccion dentro de mi main-->
+            <h2>Computadora</h2><!--Coloco un subtitulo dentro de esta seccion para que quede generalizado hacia todos los articulos siguientes, va entre h2 ya que es el segundo titulo de mi pagina-->
+            <article><!--habro el primer articulo de mi pagina-->
+                <figure><!--mediante esta etiqueta puedo colocar una imagen que ira dentro de mi articulo-->
+                    <img src="img/computadora.png" alt="dibujo de una computadora"><!--linkeo la imagen mediante la propiedad src, y mediante alt puedo llegar a hacer mas accesible mi pagina ya que doy una descripcion que los lectores de pantalla reconocen-->
+                    <figcaption><!--habro esta etiqueta para poder poner lo que seria como un pie de imagen-->
+                        <cite>Computadora de Escritorio</cite><!--Entre estas equitecas coloco el texto que quiero que se visualize en el píe de la imagen-->
+                    </figcaption><!--cieroo la etiqueta ya que ya cumplio su cometido-->
+                </figure><!--cierro el figure ya que ya puse la imagen-->
+                <p>La computadora, ese equipo indispensable en la vida cotidiana de hoy en día que también se conoce por el nombre de computador u ordenador, es una máquina electrónica que permite procesar y acumular datos. El término proviene del latín computare (“calcular”).</p> <!--este sera mi primer parrafo, para eso son las etiquetas p y /p para delimitar los parrafos. uso la etiqueta br para dejar un pequeño renglon entre los parrafos-->
+                <p> Si buscamos la definición exacta del término computadora encontraremos que se trata de una máquina electrónica capaz de recibir, procesar y devolver resultados en torno a determinados datos y que para realizar esta tarea cuenta con un medio de entrada y uno de salida. 
+                Por otro lado, que un sistema informático se compone de dos subsistemas que reciben los nombres de <strong>software y hardware</strong>, el primero consiste en la parte lógica de la computadora (programas, aplicaciones, etc) el segundo en la parte física (elementos que la forman como mother, ventilador, memoria RAM).</p> <!--aqui finalizo mi segundo parrafo, en el mismo iran dos palabras con negrita para eso es la etiqueta strong-->
+            </article><!--cierro mi articulo-->
+        </section><!--cierro mi seccion-->
+    </main><!--finalizo el cuerpo principal de mi pagina-->
+    <aside> <!--mediante esta etiqueta agregare informacion adicional a mi pagina-->
+        <p><h2>Alumno</h2></p>  <!--en este caso la informacion adicional que agregue son mis datos personales, lo puse entre h2 ya que queria que tuviera la misma relevancia que mi segundo subtitulo--> 
+        <p><h3>Apellido y nombre</h3><!--mi apellido y mi nombre, entre h3 indicando que es un nivel gerarquico menos que el subtitulo anterior-->
+        Campos Néstor Nazaret</p><!--ingreso mi nombre y apellido-->
+        <p><h3>Carrera:</h3><!--otro daro personal, en este caso mi carrera-->
+        Programador Universitario</p><!--ingrerso mi carrera-->
+        
+        <p><h3>Mail:</h3><!--otro dato personal, en este caso mi correo-->
+        <a href="mailto:nazaretcampos@gmail.com">nazaretcampos@gmail</a> </p><!--en este que es mi ultimo renglon del aside coloco mi correo electronico linkeado por si me quieren contactar-->
+    </aside><!--cierro mi aside-->
+    <footer><!--habro la etiqueta footer para indicar lo que quiero que valla en mi pie de pagina -->
+        
+        
+            <img alt="Logotipo de la facultad de ciensias exactas" src="img/facetvirtual.png"> <!--linkeo una imagen de la facet-->
+            <a href="https://facetvirtual.facet.unt.edu.ar/course/view.php?id=224">Aula Virtual</a><!--aqui lenkeo el ula virtual de laboratorio 1-->
+        
+    </footer><!--cierro mi footer-->
+</body><!--cierro mi body-->
+</head> <!--finalizo mi head-->   
+</html><!--termino mi html-->
