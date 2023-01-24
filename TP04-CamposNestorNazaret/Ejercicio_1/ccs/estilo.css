@@ -1,0 +1,272 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+/*----------------------------------Nav---------------------------------*/
+nav {
+    background-color: rgb(0, 0, 0);
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+ul li{
+    margin: 0.3em;
+    padding: 0.2em;
+    
+    
+    
+}
+
+nav li:hover, a:focus{
+    
+    border-radius: 2em;
+    background-color: rgb(252, 38, 0);
+} 
+
+
+#navegacion ul{
+    
+    justify-content: flex-end;
+    
+}
+#navegacion li a{
+    padding: 0.2em;
+    border-radius: 0.3em;
+    background-color: rgba(255, 38, 0, 0.685);
+}
+
+/*------------------------------------------------------------------------*/
+/*----------------------------------Header---------------------------------*/
+header{
+    background-color: rgba(216, 12, 12, 0.808);
+}
+
+
+header figure{
+    width: 13vw;
+    height: 13vh;
+    margin-left: 1.5em;
+}
+
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+
+header h1, header figure {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*------------------------------------------------------------------------*/
+/*----------------------------------Main----------------------------------*/
+main{
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/fondo.webp);
+    background-size: 100%;
+    color:rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*------------------------------------------------------------------------*/
+/*----------------------------------Seccion---------------------------------*/
+section{
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 2em
+}
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Los H---------------------------------*/
+h2{
+    padding-left: 9em;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+/*------------------------------------------------------------------------*/
+/*----------------------------------Articles---------------------------------*/
+article{
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 85%;
+    height: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.6em;
+    padding:1em;
+    border-radius: 3em;
+    text-align: justify;
+    
+}
+article figure{
+    width: 20vw;
+    height: 20vh;
+}
+
+.art1 img{
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(126, 252, 0, 0.171);
+}
+
+
+.art2 img {
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(183, 209, 158, 0.726);
+}
+.art1 figure{
+    float: left;
+    padding: 1em;
+}
+
+.art2 figure{
+    float:right;
+    padding: 1em;
+}
+.art3{
+    background-color:rgba(226, 45, 45, 0.479);
+}
+.galeria{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+
+    
+}
+
+.galeria{
+    padding-top: 1em;
+}
+.galeria figure{
+    width: 25vw;
+    height: 37vh;
+    padding: 0.7em;
+    padding-bottom: 2em;
+    
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+.galeria figcaption{
+    text-align: center;
+}
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Video----------------------------------*/
+video{
+   
+    width: 70vw;
+    height: 90vh;
+    padding-left: 10em;
+
+}
+/*------------------------------------------------------------------------*/
+/*----------------------------------Tabla---------------------------------*/
+table{
+    
+    
+    border-collapse: collapse;
+}
+
+th, td{
+    border: tomato 0.1em solid;
+    padding: 1em;
+}
+
+.linea{
+ background-color: rgba(0, 0, 0, 0.815);
+}
+.linea2{
+    background-color:rgba(226, 45, 45, 0.651);
+   }
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Footer---------------------------------*/
+footer{
+    text-align: center;
+    
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    
+}
+footer p{
+    padding-top: 0.4em;
+}
+/*------------------------------------------------------------------------*/
+/*----------------------------------Form----------------------------------*/
+form{
+    background-color: rgba(50, 66, 110, 0.555);
+    margin: 0auto;
+    border: 2em solid rgba(0, 128, 0, 0.479);
+    border-radius: 3em;
+    padding: 3em;
+
+    
+    
+}
+label{
+   display: block;
+   padding: 0.4em;
+   padding-left: 2em;
+}
+/*----------------------------------Form---------------------------------*/
+/*----------------------------------Aside--------------------------------*/
+aside{
+    width: 19vw;
+    background: rgba(197, 116, 115, 0.719);
+}
+aside figure{
+    width: 16vw;
+    height: 23vh;
+    padding-top: 1.3em;
+    margin: 0 auto;
+    
+}
+aside img{
+    width: 100%;
+    height: 100%;
+    
+}
+aside figcaption{
+    text-align: center;
+}
+aside article{
+    background-color: rgba(3, 3, 3, 0.315);
+    border-radius: 1em;
+    width: 18vw;
+    height: 30vh;
+    padding: 0.1em;
+    padding-top: 0em;
+}
+aside h3{
+    padding: 0.5em;
+}
+/*-----------------------------------------------------------------------*/
+/*----------------class seccion que use para el apartado c------------------*/
+.seccion {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 0em;
+}
+.seccion main{
+    width: 90%;
+    
+}
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+ 

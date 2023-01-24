@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>Juego Cupheder</title>
+    <link rel="stylesheet" href="ccs/estilo.css">
+    <!--Entre lsa etiquetas head dejo alojado todos aquellos atributos meta que me puedan llegar a servir, como asi tambien pongo el tiyulo que aparecera en el navegador de mi paguina, y lenkeo mi ssc-->
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="#contenido">Saltar a contenido </a></li>
+            <li> <a href="#navegacion">Saltar a navegacion</a> </li>
+        </ul>
+        <!--en esta lista creo los enlaces de saltar a contenido y saltar a navegacion haciendo uso de los ids-->
+    </nav>
+    
+    <header>
+        <figure>
+            <img src="img/header.jpg" alt="dibujo de dos muñequitos con cabeza de taza, sobre ellos esta la palabra Cuphead">
+        </figure>
+        <h1>CUPHEAD</h1>
+        <!--en el header coloco una imagen y tambien el titulo del juego, este uktimo con h1 para denotar su gerarquia -->
+    </header>
+    
+    <nav id="navegacion">   
+        <ul>
+            
+            <li>  <a href="index.html">Inicio</a> </li>
+            <li> <a href="html/multimedia.html">Galeria peronajes</a>  </li>
+            <li> <a href="html/contacto.html">Contacto</a>  </li>
+            <!--en este nav creo, mediante una lista, lo que figuraria como mi barra de navegación-->
+        </ul>
+    </nav>
+   
+    
+    <main id="contenido">
+        <section> <h2>Info del Juego</h2>
+            <article class="art1">
+                <figure>
+                    <img src="img/p1a.jpg" alt="dibujo de dos muñequitos con cabesa de taza, vestidos de traje y de fondo el color negro">
+                </figure>
+                
+                <p >
+                    <strong> Hay juegos que entran al instante por la vista, y 'Cuphead' es uno de ellos.</strong> Presentado en el lejano E3 2014 como exclusiva para PC y Xbox One,<strong> nos llamó la atención por su apartado gráfico, como claro homenaje a los dibujos animados de 1930</strong>, y bajo unas mecánicas muy de 'Contra' o 'Gunstar Heroes'.
+                Cuando lo probamos por primera vez, hace un par de años, nos gustó... aunque también fuimos testigos de sus carencias. Que estuviese centrado única y exclusivamente en duelos contra jefes finales, pesaba en su contra. Y ni siquiera los bosses contaban con muchos patrones de ataque, lo cuál era peor.
+                No fue de extrañar, por lo tanto, que Studio MDHR tuviese en cuenta el feedback de los usuarios y optase por añadir secciones de plataformeo a lo run & gun, para darle más vida al juego y que no se limitase a combates directos contra jefes.
+                De ahí que no haya salido en 2016, tal y como había prometido el estudio. Pero por suerte,  2017 será el año de 'Cuphead', y sus creadores nos han puesto al día en torno a su proyecto para disipar cualquier duda, así que... ¡al lío!
+                </p>
+                <!--en este articulo coloco un parrafo y una imagen, tambien le pongo la clase art1 para que tenga propiedades distintas a los demas articulos-->
+            </article>
+            <article class="art2">   
+                <figure>
+                    <img src="img/p2.jpg" alt="dibujo de dos muñequitos con cabesa de taza, vestidos de traje y de fondo el color negro">
+                </figure> 
+                <p >Como hemos recordado, 'Cuphead' está inspirado en los dibujos animados de los años 30, con   es, Copley Pictures...
+                    Del mismo modo, <strong>su otra inspiración, esta vez dentro de los videojuegos, han sido clásicos de los noventa, desde el fantástico 'Gunstar Heroes' de Treasure, hasta los 'Contra' de Konami</strong> (citan el 'Super Probotector: Alien Rebels' de SNES y el 'Probotector' de MD como sus mayores influencias de dicha saga), <strong>pasando por 'Super Mario World', la saga 'Thunderforce' e incluso 'Street Fighter III'</strong>.
+                    Por si fuese poco, ante este combo de belleza visual de <strong>la mejor Disney con un componente jugable que evoca la mejor época de las recreativas</strong>, se le suma una banda sonora con piezas de jazz originales, compuestas por Kristofer Maddigan. Studio MDHR ha recalcado que serán cerca de dos horas y media de música, y como es lógico, su BSO también se pondrá a la venta cuando salga el juego.
+                </p> 
+                <!--en este segundo articulo tambein coloco un parrafo y una imagen, ademas le doy la clase art2 para poderlo trabajar en el ccs de forma particular-->
+            </article>
+        </section>
+        <section>
+            <article class="art3"> 
+               <table>
+                   <caption>
+                       <h2>Requisitos minimos del Juego para PC</h2>
+                   </caption>
+                   <thead>
+                       <tr class="linea">
+                           <th scope="col"></th>
+                           <th scope="col">SO</th>
+                           <th  scope="col">Procesador</th>
+                           <th  scope="col">  Memoria</th>
+                           <th  scope="col">Gráficos</th>
+                           <th scope="col ">DirectX</th>
+                           <th  scope="col">Almacenamiento</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr class="linea2">
+                           <th>Windows</th>
+                           <td>Windows 7</td>
+                           <td>Intel Core2 Duo E8400, 3.0Ghz o AMD Athlon 64 X2 6000+, 3.0GHz or higher</td>
+                           <td>3 GB de RAM</td>
+                           <td>Geforce 9600 GT o AMD HD 3870 512 MB</td>
+                           <td rowspan="2">Version 11</td>
+                           <td>4GB de espacio Disponible</td>
+                       </tr>
+                       <tr class="linea">
+                           <th>MacOS</th>
+                           <td>OS X 10.11</td>
+                           <td>Intel Core i5 or higher</td>
+                           <td>4GB de RAM</td>
+                           <td>Intel HD Graphics 4000 or higher</td>
+                           
+                           <td>4 GB de espacio disponible</td>
+                       </tr>
+                   </tbody>
+               </table> 
+               <audio autoplay loop>
+                    <source src="audio/Cuphead OST - 03 - Introduction(MP3_160K)_1.mp3" type="audio/mp3" >
+                    <source src="audio/Cuphead OST - 03 - Introduction(MP3_160K)_1.wav" type="audio/pcm">
+                    <source src="audio/Cuphead OST - 03 - Introduction(MP3_160K)_1.wma" type="audio/wma">
+                </audio>
+                <!--en todo este articulo lo que hice fue agregar una tabla con los requisitos de mi juego, y ademas agregar un audio a modo de sonido de fono para mi paguina-->    
+            </article>
+        </section>
+    </main>
+    
+    
+    <footer>
+        
+        <p> <a href="http://www.cupheadgame.com">+Info del Juego</a></p>
+      
+    </footer>
+</body>
+
+</html>

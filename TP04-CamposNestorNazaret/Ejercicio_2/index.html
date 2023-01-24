@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="ccs/estilo.css">
+</head>
+
+
+<body>
+    
+    <header>
+        <h1>Encuesta</h1>
+    </header>
+    <main >
+        <section> 
+            <!--Desde aqui comienzo a crear mi formulario: mediante las etiqueta form le doy inicio, filset me servira para delimitar las areas de mi formulario-->
+            <form action="labo2.php" method="POST">
+                <fieldset class="area1">
+                    <legend class="legend2">Datos Personales</legend><!--mediante legend lo que ago es darle como un titulo a mi sector del formulario-->
+                    <label for="nombre">Nombre<!--mediante los label voy agregando items a mi formulario-->
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" maxlength="50" required name="elnombre"><!--a traves de los inputs puedo llegar a definir bien que es lo queriro que usuario ingrese-->
+                        <!--en el input anterior aseguro que lo que va a ingrear el usuario de tipo texto, que no contenga mas de 50 caracteres, que llene obligatoriamente el campo, mediante placeholder le doy a saber que es lo que quiero que ingrese-->
+                    </label>
+
+                    <label for="mail">Mail
+                        <input type="email" id="mail" placeholder="Ingrese su casilla de mail" required name="elmail">
+                    </label>
+                    <!--A traves del lavel anterior le pedi al usuario que ingresara su mail-->
+                    <label for="fecnac">Fecha de Nacimiento
+                        <input type="date" id="fecnac" value="2020-01-01"  >
+                    </label>
+                     <!--A traves del lavel anterior le pedi al usuario que ingresara su fecha de nacimiento-->
+                    <label for="cel">Celular (con código del area sin 0 ni 15)
+                        <input type="tel" id="cel" pattern="[0-9]{10}" placeholder="381000000" name="telefono">
+                    </label>    
+                </fieldset> 
+                <fieldset class="area2">
+                    <legend class="legend3">Sobre la Carrera</legend>
+                    <label for="micarrera">Indique la carrera en en la que se inscrivio origuinalmente:
+                        <select name="carrera" id="micarrera">
+                            <option value="ninguna">---Seleccione---</option>
+                            <option value="Programador Universitario">Programador Universitario</option>
+                            <option value="Licensiatura en Informática">Licensiatura en Informática</option>
+                            <option value="Ingenieria Informática">Ingenieria Informática</option>
+                        </select>
+                    
+                    </label>
+                    <!--a traves del lavel anterior lo que hice fue crear una pequeña lista plegable para que el usuario pueda acceder a ella y elejir una de las opciones de la misma-->
+                    
+                    
+                    <legend class="legend1">Recursante</legend>
+                    <label for="sirecur">Sí
+                        <input type="radio" id="sirecur" name="recursa" value="Sí">
+                    </label>
+                    <label for="norecur">No
+                        <input type="radio" id="norecur"    name="recursa"  value="No" checked>
+                    </label>
+                    <!--meadiante las labels anteriores cree dis casillas de verificacion para que el usuario selecione solo una de ellas (esto se logra dandole el mismo nombre a las bariables)-->
+                    <label for="materias">
+                        <input type="checkbox" name="Algebra" id="materias" >Algebra
+                    </label>
+                    <label for="materia2">
+                        <input type="checkbox" name="Calculo I" id="materia2">Calculo I
+                    </label>
+                    <label for="materia3">
+                        <input type="checkbox" name="Lavoratorio I" id="materia3" checked>Lavoratorio I
+                    </label>
+                    <label for="materia4">
+                        <input type="checkbox" name="Elemento" id="materia4">Elemento de Computación y Lógica
+                    </label>
+                    <label for="materia5">
+                        <input type="checkbox" name="Otras" id="materia5">Otras
+                    </label>
+                    <!--los pasos anteriores corresponden a otro tipo de casilla de verificacion, pero en estas el usuario ya puede selecionar mas de una-->
+                </fieldset>
+
+                <fieldset class="area3">
+                    <legend class="legend4">Sobre la materia</legend>
+                    <legend class="legend1">Indique el horario de la comición práctica a la que asiste</legend>
+                    <label for="dia">Día
+                        <select name="carrera" id="dia">
+                            <option value="ninguna">---Seleccione---</option>
+                            <option value="Jueves">Jueves</option>
+                            <option value="Viernes">Viernes</option>
+                        </select>
+                    </label> 
+                    <!--en el label anterior cree otra lista plegable correspondiente a los dias de las materias -->
+                    <label for="hora">Hora
+                        <input type="time" name="horaentrada" id="hora">
+                    </label>
+                    <!--aqui dejo que el usuario selecione la hora de la comicion a la que asiste-->
+                    <label for="satisfaccion">Indique el grado de satisfacción respecto de esta materia:
+                        (poco)
+                        <input type="range" name="Nivelsatisfaccion" id="satisfaccion" min="0" max="100" step="5">
+                        (mucho)
+                    </label> 
+                    <!--mediante el label anterior lo que ago es crear un pequeña barra para que elumno pueda selecionar a travez de ella cuan satisfecho se siente respecto a esta materia-->
+                    <label for="nota">Del 1 al 10 como califica al dictado de la materia:
+                        <input type="number" name="calificacion" id="nota" min="0" max="10" placeholder="5">
+
+                    </label>  
+                    <!--aqui dejo que ela lumno califique la materia poniendo como nota minima el 0 y como nota maxima el 10-->
+                    
+                </fieldset>
+                <fieldset class="botones">
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </fieldset>
+                <!--aqui cree otra pequeña parte de mi formulacio para ingresar los botones de enviar y de limpiar el formulario--> 
+            </form>
+        </section>
+    </main>
+</body>
+</html>

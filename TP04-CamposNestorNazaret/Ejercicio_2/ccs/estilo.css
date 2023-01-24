@@ -1,0 +1,80 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+
+}
+/*----------------------------------Header---------------------------------*/
+header{
+    width: 61%;
+    margin: 0 auto;
+    background-color: rgb(127, 167, 255);
+}
+h1{
+    text-align: center;
+    margin-top: 1em;
+}
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Form-----------------------------------*/
+label{
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: 1.2em;
+}
+form{
+    width: 60.5%;
+    margin: 0 auto;
+    border: 0.4em rgb(127, 167, 255) solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 1em;
+    
+}
+fieldset{
+    
+    margin: 0.6em;
+    margin-top: 1em;
+    
+}
+legend{
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+.legend1{
+    text-align:left;
+    margin-left: 1.2em;
+}
+.legend2, .area1{
+    background-color: red;
+    padding: 0.3em;
+}
+.legend3, .area2{
+    background-color: rgb(236, 176, 72);
+    padding: 0.3em;
+}
+.legend4, .area3{
+    background-color: green;
+    padding: 0.3em;
+}
+
+
+.botones {
+    padding-left: 30em;
+    
+    
+}
+.botones input{
+    height: 5vh;
+    width: 5vw;
+    background-color: rgb(127, 167, 255);
+    margin: 0.2em;
+    color: white;
+}
+/*-------------------------------------------------------------------------*/
+
+    
+
+ 

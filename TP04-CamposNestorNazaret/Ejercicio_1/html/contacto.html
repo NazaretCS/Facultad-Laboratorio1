@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>Opinion</title>
+    <link rel="stylesheet" href="../ccs/estilo.css">
+    <!--Entre lsa etiquetas head dejo alojado todos aquellos atributos meta que me puedan llegar a servir, como asi tambien pongo el tiyulo que aparecera en el navegador de mi paguina, y lenkeo mi ssc-->
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="#contenido">Saltar a contenido </a></li>
+            <li> <a href="#navegacion">Saltar a navegacion</a> </li>
+        </ul>
+        <!--en esta lista creo los enlaces de saltar a contenido y saltar a navegacion haciendo uso de los ids-->
+    </nav>
+    
+    <header>
+        <figure>
+            <img src="../img/header.jpg" alt="dibujo de dos muñequitos con cabeza de taza, sobre ellos esta la palabra Cuphead">
+        </figure>
+        <h1>CUPHEAD</h1>
+        <!--en el header coloco una imagen y tambien el titulo del juego, este uktimo con h1 para denotar su gerarquia -->
+    </header>
+    
+    <nav id="navegacion">   
+        <ul>
+            
+            <li>  <a href="../index.html">Inicio</a> </li>
+            <li> <a href="multimedia.html">Galeria peronajes</a>  </li>
+            <li> <a href="contacto.html">Contacto</a>  </li>
+            <!--en este nav creo, mediante una lista, lo que figuraria como mi barra de navegación-->
+        </ul>
+    </nav>
+   
+    <section class="seccion">
+        <main id="contenido">
+            <section> 
+                <h2>Nos importa tu opinion!!</h2>
+                <form action="mailto:nazaretcampos27@gmail.com" method="POST">
+                    
+                    <fieldset>
+                        <legend>Formulario de Sugerencias</legend>
+                        <label for="ape">Apellido:
+                            <input type="text" name="apellido" id="ape" placeholder="Belgrano" required>
+                        </label>
+                        <label for="correoo">Correo:
+                            <input type="email" name="correo" id="correoo">
+                        </label>          
+                        
+                        <label for="sirecur"> <legend>¿Quiere resivir novedades o promociones del juego?</legend> Sí
+                                
+                            <input type="radio" id="sirecur" name="recursa" value="Sí">
+                        </label>
+                                
+                        <label for="norecur">No
+                            <input type="radio" id="norecur"    name="recursa"  value="No" checked>
+                        </label>
+                        
+                        <label for="comentario">Por favor, ingrese un comentario.</label>
+                            <textarea  cols="80" rows="5" name="comenta" id="comentario" > </textarea>
+                        
+                            
+                    
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                    <!--en las lineas anteriores lo que hice fue agregar un pequeño formulario para que el usuario llene-->
+                </form>
+            </section>
+        
+            
+        </main>
+        <aside>
+            <h3>Juegos similares a Cuphead</h3>
+            <article>
+                <figure>
+                    <figcaption>Mario Bros</figcaption>
+                    <a href="https://mario.nintendo.com"><img src="../img/Mario Bros.jpg" alt="imagen de un hombresito con cara feliz vestido de rojo y azul monta a un dinosaurio verde."></a>
+                    
+
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>Metal Slug</figcaption>
+                    <a href="https://game.snk-corp.co.jp/official/metalslug_sp/english/"><img src="../img/Metal Slug.jpg" alt="Imagen con el texto Metal slug, y contiene tambien a un hombresito con un arma enfrentandose a un elicopetero"></a>
+                    
+                    
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>Enchanted Portals</figcaption>
+                    <a href="https://www.google.com/amp/s/vandal.elespanol.com/fecha-lanzamiento-amp/pc/enchanted-portals/78299"><img src="../img/Enchanted Portals (1).jpg" alt="imagen muy colorida de dos chicos (en apariencia elfos) siendo succionados por una clase de portal celeste"></a>
+                    
+                </figure>
+            </article>  
+            <!--en el aside de mi paguina lo que hice fue agrega imagenes de juegos parecidosy mediante las mismas linkee paguinas de esos juegos--> 
+        </aside>
+    </section>
+    <footer>
+        
+        <p> <a href="http://www.cupheadgame.com">+Info del Juego</a></p>
+      
+    </footer>
+</body>
+
+</html>
