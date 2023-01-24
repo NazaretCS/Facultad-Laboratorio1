@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Campos Néstor Nazaret">
+    <title>HORÓSCOPO</title>
+    <link rel="stylesheet" href="../ccs/estilo.css">
+    
+</head>
+<body>
+   
+    <nav  class="nav1">
+        <ul>
+            <li><a href="#contenido">Saltar a contenido </a></li>
+            <li> <a href="#navegacion">Saltar a navegacion</a> </li>
+        </ul>
+        
+    </nav>
+    
+    <header>
+        
+        <h1>HORÓSCOPO</h1>
+        
+    </header>
+    
+    <section id="contenedor-menu">
+        <figure>
+            <a href="#contenedor-menu"><img src="../img/burger_menu.png" alt="imagen de tres lineas horizontales paralelas" id="abrir"></a>
+            <a href="#"><img src="../img/cerrar_menu.png" alt="imagen de una X grande color negro" id="cerrar"></a>
+        </figure>
+        <nav id="contenedor-enlaces">   
+            <ul id="navegacion">
+                
+                <li>  <a href="../index.html">Inicio</a> </li>
+                <li> <a href="Galerio.html">Galeria de Signos</a>  </li>
+                <li> <a href="#">Formulario</a>  </li>
+                <li> <a href="Tabla.html">Tabla de Signos</a>  </li>
+                
+                
+            </ul>
+        </nav>
+    </section>
+    
+    <main id="contenido">
+        <section>
+            <h2 class="h2form">¡Envianos tus datos y te averiguarmos tu suerte!</h2>
+            <form action="labo2.php" method="POST">
+                <fieldset>
+                    <legend>Por favor, llena los siguientes campos</legend>
+
+                    <label for="ape">Apellido:</label>
+                        <input type="text" name="apellido" id="ape" placeholder="Belgrano" required>
+
+                    <label for="nom">Nombre:</label>
+                        <input type="text" name="nombre" id="nom" placeholder="Victoria" required>
+                    
+                    <label for="mail">Ingrese su correo:</label>
+                        <input type="email" name="correo" id="mail" placeholder="matias27@gmail.com" >
+                    
+                    <label for="comentario" class="labeltextarea">Por favor, descriva como le ah ido en los ultimos 3 dias</label>
+                    <textarea  cols="80" rows="5" name="comenta" id="comentario" > </textarea>
+                
+                
+                
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Enviar" class="botonesformu">
+                    <input type="reset" value="Limpiar" class="botonesformu">
+                </fieldset>
+            </form>
+               
+            
+        </section>
+        
+        
+    </main>
+    
+    
+    <footer>
+        
+        <p>
+            <a href="https://www.google.com/amp/s/www.elespanol.com/sociedad/horoscopo/20210501/horoscopo-semana-mayo-predicciones-amor-dinero-trabajo/577693527_0.amp.html">Ver el Horoscopo Semanal</a>
+        </p>
+      
+    </footer>
+</body>
+
+</html>

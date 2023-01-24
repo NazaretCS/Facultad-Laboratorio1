@@ -1,0 +1,552 @@
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*aqui limpio los border, padding y margin de mi archivo*/
+}
+
+header{
+    background-color: rgba(250, 235, 215, 0);
+}
+ul, li{
+    list-style: none;
+}
+
+
+#contenedor-menu nav ul{
+    background-color: rgba(0, 255, 255, 0.219);
+    
+    
+    
+}
+#contenedor-menu  li{
+    background-color: rgba(0, 255, 234, 0.692);
+
+    
+}
+
+
+
+figure{
+    background-color: rgba(0, 255, 234, 0.411);
+}
+
+h1{
+   background-color: rgba(0, 255, 255, 0.884); 
+    
+}
+h2{
+    color: white;
+}
+.nav1{
+  background-color: rgba(0, 255, 255, 0.884);  
+}
+
+section{
+    background-color: rgba(125, 197, 53, 0);
+}
+
+article{
+    background-color: rgba(76, 84, 190, 0.938);
+    border-radius: 0.3em;
+    
+}
+
+footer{
+    background-color: rgba(43, 170, 230, 0.781);
+    text-align: center;
+}
+body {
+    background-image:url(../img/Todos.jpg) ; 
+}
+
+form {
+    background-color: rgba(0, 128, 128, 0.459);
+    
+    
+}
+fieldset {
+    background-color: rgba(0, 128, 128, 0.541);
+}
+/*----------------------------------Sitio de pantallas mayores que 320--------------------------*/
+@media all and (min-width:320px) {
+    
+
+    
+    
+    #contenedor-menu img{
+        
+        width: 12vw;
+        
+    }
+    #contenedor-menu #cerrar{
+        
+        display: none;
+    }
+    #contenedor-menu ul {
+        height: 0;
+        overflow: hidden;
+        transition: 1.5s;
+    
+    }
+
+    #contenedor-menu:target #cerrar{
+        
+        display:block;
+    } 
+    
+    #contenedor-menu:target #abrir{
+        
+        display: none;
+    }
+    
+    #contenedor-menu:target ul{
+        transition: 0.8s;
+        height: 16vh;
+    }
+
+    nav li {
+        padding-bottom: 0.4em;
+        margin-top: 0.2em;
+        width: 100vw
+        
+    }
+    nav a {
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+    }
+
+    .nav1  ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.5em;
+    }
+    header h1{
+        text-align: center;
+    }
+     
+    .seccion1 {
+        
+        column-count: 1 ;
+        text-align: justify;
+        
+        padding: 0.3em;
+    }
+    .seccion1 h3{
+        padding-left: 1.8em;
+        padding-top: 1.5em;
+    }
+    .seccion1 article {
+        margin: 0.3em;
+    }
+    .seccion1 article figure{
+        width: 80%;
+        height: 23vh;
+        margin: 0 auto;
+        padding: 0.1em;
+    }
+    .seccion1 article img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    footer {
+        height: 6vh;
+       
+    }
+    footer p{
+        padding-top: 0.5em;
+    }
+    .h2form {
+        text-align: center;
+    }
+    
+        
+
+    /*------------------tabla responsive para 320px----------------*/
+    table  {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4em;
+        border-collapse: collapse;
+    }
+    table caption {
+        padding-bottom: 1em;
+    }
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7em;
+        box-shadow: 0em 0.1em 0.1em gray;
+        border: solid black 0.1em;
+        
+    }
+    table td{
+        padding: 0.3em 0.3em 0.3em 0em;
+        border-right: 0.5em;
+        border: 0.1em solid rgba(0, 174, 255, 0.884);
+    }
+ 
+    .titulostabla{
+        display: none;
+    }   
+    th:nth-of-type(1)::before{
+        content: "Signo:";
+        padding-left: 0.1em;
+        padding-top: 0.1em;
+        padding-right: 0.47em;
+        padding-bottom: 0.2em;
+    }
+
+    td:nth-of-type(1)::before {
+        content: "Inicio:";
+        padding-left: 0.1em;
+        padding-top: 0.25em;
+        padding-right: 0.5em;
+        padding-bottom: 0.37em;
+        
+    }
+
+    td:nth-of-type(2)::before {
+        content: "Cierre:";
+        padding-left: 0.1em;
+        padding-top: 0.31em;
+        padding-right: 0.3em;
+        padding-bottom: 0.42em;
+        
+     }
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        background-color: rgb(102, 51, 153);
+        color: red;
+        margin-right: 0.3em;
+        
+        
+        
+        
+        
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        background-color: rgb(102, 51, 153);
+        color: red;
+        margin-right: 0.1em;
+        
+        
+    }
+/*----------------------formulario responsibe para 320px------------------*/
+    form {
+        width: 95%;
+        margin: 0 auto;
+        
+        
+    }
+    fieldset {
+        margin-bottom:  1em;
+    }
+    form legend{
+        font-size: 1.2em;
+        padding-top: 0.6em;
+    }
+    
+    form input[type=text], form input[type=email], form textarea, form label{
+        display: block;
+        font-size: 1.5em;
+        padding: 0.6em;
+        width: 95%;
+        margin: 0auto;
+    }
+
+    form .botonesformu {
+        display: block;
+        width: 97%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+    /*-----------------Galeria de Imagenes responsive para 320px---------------*/ 
+    .imgseccion{
+        display: block;
+    }
+    .imgseccion article figure{
+        width: 75%;
+        height: 40vh;
+        margin: 0 auto;
+        padding: 0.3em;
+    }
+
+    .imgseccion article figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .parrafosigno{
+        padding-top: 1em;
+        padding-bottom: 0.2em;
+        text-align: center;
+        font-size: 1.4em;
+
+    }
+
+}
+/*------------------------------------Fin de Codigo perteneciente a 320px-------------------------------*/
+/*-----------------------------Inicio del Codigo para pantallas mayores a 768px-------------------------*/
+@media all and (min-width:768px){
+    /*----------------------------Columnas responsibe para 768px en adelante--------------------------*/
+    .seccion1 {
+        
+        column-count: 2 ;
+        text-align: justify;
+        column-gap: 3%;
+        padding: 0.3em;
+        text-indent: 0.2em;
+    }
+
+    .seccion1 h2{
+        text-align: center;
+    }
+
+    #contenedor-menu figure{
+        height: 6.5vh;
+        width: 100vw ;
+    }
+
+    #contenedor-menu img{
+        height: 100%;
+        width: 5%;
+    }
+
+    /*-----------------Galeria de Imagenes Responsive para 768px en adelante-----------------*/
+    .imgseccion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgseccion article figure{
+        width: 47vw;
+        height: 50vh;
+        margin: 0 auto;
+        padding: 0.67em;
+        
+    }
+    
+}
+/*------------------------------------Fin de Codigo perteneciente a 768px -------------------------------*/
+
+/*-----------------------Inicio del codigo perteneciente a 1024px en adelante ---------------------------*/
+@media all and (min-width:1024px){
+
+    #contenedor-menu figure{
+        
+        display: none;
+        
+    }
+    #contenedor-menu #cerrar{
+        
+        display:none;
+    }
+
+    #contenedor-menu #contenedor-enlaces  ul {
+        
+        height: 2em;
+        
+    }
+
+    
+    #contenedor-enlaces ul{
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    #contenedor-enlaces li{
+        flex-grow: 1;
+        
+    }
+    
+    #contenedor-menu ul {
+        
+        transition: 0s;
+    
+    }
+
+    .titulo2{
+        padding-top: 1em;
+        text-align: center;
+        
+    }
+    #contenedor-menu #contenedor-enlaces :hover, #contenedor-menu #contenedor-enlaces a :focus{
+        background-color: rgb(26, 174, 243);
+        transition: 1s;
+    }
+    
+    
+    #contenedor-menu:target ul{
+        transition: 0s;   
+    }
+    
+
+    nav li {
+        padding-bottom: 0.4em;
+        margin-top: 0.2em;
+        width: 10vw;
+        
+        
+    }
+    nav a {
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 1em;
+    }
+
+    
+
+
+
+    
+
+    /*----------------------------Columnas responsibe para 1024px en adelante--------------------------*/
+    .seccion1 {
+        
+        column-count: 3 ;
+        text-align: justify;
+        column-gap: 1%;
+        padding: 0.7em;
+        text-indent: 0.2em;
+    }
+
+    .seccion1 h2{
+        text-align: center;
+        padding-bottom: 0.7em;
+    }
+    /*----------------------------Tablas responsibe para 1024px en adelante--------------------------*/
+    
+    table{
+        text-align: center;
+     }   
+     caption h2{
+        padding-top: 1em;
+     }
+ 
+    .titulostabla, tr{
+        display: table-row;   
+    }   
+    
+
+    td:nth-child(odd)::before, td:nth-child(even)::before{
+        display: none;   
+    }
+    th:nth-child(odd)::before, th:nth-child(even)::before{
+        display: none;
+          
+    }
+    table td{
+      border: 0.1em solid rgb(0, 0, 0);
+    }
+   
+
+    /*-----------------Galeria de Imagenes Responsive para 1024px en adelante-----------------*/
+    .imgseccion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgseccion article figure{
+        width: 31.1vw;
+        height: 50vh;
+        margin: 0 auto;
+        padding: 0.67em;
+        
+    }
+
+         
+    
+   
+
+
+    /*----------------------formulario responsibe para 1024px---------------------*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+        background-color:  rgba(0, 128, 128, 0.842);
+        
+        
+    }
+    form legend{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    
+    form input[type=text], form input[type=email], form textarea, form label {
+        display:inline-block;
+        font-size: 1.5em;
+        padding: 0.2em;
+        width: 59%;
+        margin: 0.2em;
+    }
+    form label{
+        width: 26%;
+        display: inline-block;
+        padding-left: 1em;
+        text-align: center;
+        
+    }
+    .labeltextarea textarea{
+        vertical-align: middle;
+    }
+    
+    
+    form .botonesformu {
+        display:inline-block;
+        width: 48%;
+        padding: 0.3em;
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+        margin: 0 auto;
+        margin: 0.2em;
+        
+    }
+    form input[type=reset]{
+        padding-top: 0.4em;
+    }
+    .h2form{
+        padding: 1em;
+        font-size: 2em;
+    }
+
+
+}
+
+
+@media all and (min-width:1440px){
+    .imgseccion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgseccion article figure{
+        width: 23.5vw;
+        height: 30vh;
+        margin: 0 auto;
+        padding: 0.67em;
+        
+    }
+
+
+}
+
+
+
+    
+    
+    
+       
+        
+        
+    
+
+    
